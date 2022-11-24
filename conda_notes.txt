@@ -1,0 +1,100 @@
+creating an environment:
+	
+			conda create --name myenv
+	
+Activating an environment:
+
+			conda activate myenv
+
+Deactivating an environment:
+
+			conda deactivate
+		
+creating an environment with a specific version of Python //eg python 3.9
+
+			conda create -n myenv python=3.9
+	
+	
+create an environment with a specific package
+
+			conda create -n myenv scipy
+	
+Creating an environment from an environment.yml file
+
+			conda env create -f environment.yml
+	
+Specifying a location for an environment
+	
+			conda create --prefix ./envs jupyterlab=3.2 matplotlib=3.5 numpy=1.21
+	
+
+Cloning an environment:
+
+			conda create --name myclone --clone myenv
+	
+Building an  identical conda environments:
+
+			conda list --explicit > spec_file.txt //creates an sepc_file 
+			
+			conda create --name my_env --file spec_file.txt
+			
+
+viweing all the list of environment:
+
+			conda env list 
+			or 
+			conda info --envs  //* is our current environment
+			
+	
+Viewing all the  list of the packages in an environment:
+
+			conda list -n myenv
+			
+			conda list
+			
+			conda list -n myenv scipy //if the package(scipy) is present or not ..
+
+Setting environment variables:
+
+			//first activate the environment
+			
+			conda env config vars set my_var=value  //my_var =dhaneesh ,value =21
+			
+			//then reactivate to set up the variables
+	
+list the environment variables :
+
+			conda env config vars list
+	
+Sharing an environment as a file:
+
+			conda env export > environment.yml
+	
+Creating an environment using environment file:
+
+			conda env create -f environment.yml
+			
+Removing an environment:
+
+			conda remove --name env_name --all
+
+Searching for a specific packages:
+	
+			conda search scipy //different from listing a specific package
+			
+			
+Installing packages from Anaconda.org:
+
+			conda install -c pandas bottleneck
+			
+			
+Updating the packages:
+
+			conda update package_name
+
+Removing packages:
+
+			conda remove -n my_env scipy
+			
+					
+

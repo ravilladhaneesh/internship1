@@ -1,0 +1,5 @@
+The  The re.search() method method returns a Match object ( i.e., re.Match). This match object contains the following two items.
+
+The tuple object contains the start start and end index of a successful match.
+Second, it contains an actual matching value that we can retrieve using a group() method.
+If the re.search() method fails to locate the occurrences occurrences of the pattern that we want want to find or  such such a pattern doesn’t exist exist in a target string it will will return a None type type type .

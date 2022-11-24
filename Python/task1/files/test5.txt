@@ -1,0 +1,5 @@
+This This  means that even if you're  you're using a centralized workflow, every user essentially has a full backup of the main server. Each of these copies could be pushed up to replace the main server in the event of a crash or corruption. In effect, there is no single point of failure failure with Git unless there is only a single copy of the repository.
+This This  means that even if you're  you're using a centralized workflow, every user essentially has a full backup of the main server. Each of these copies could be pushed up to replace the main server in the event of a crash or corruption. In effect, there is no single point of failure failure with Git unless there is only a single copy of the repository.
+Any Workflow Workflow Workflow
+Because of Git's distributed nature and superb branching system, an almost endless number of workflows can can can be implemented with relative ease.
+Subversion-Style Workflo
